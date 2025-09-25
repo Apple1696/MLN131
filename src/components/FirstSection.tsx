@@ -28,11 +28,11 @@ const Hero1 = ({
   buttons = {
     primary: {
       text: "Khám quá ngay ",
-      url: "https://www.shadcnblocks.com",
+      url: "#socialist-democracy",
     },
     secondary: {
       text: "Giới thiệu team",
-      url: "https://www.shadcnblocks.com",
+      url: "#team-section",
     },
   },
   images = [
@@ -73,13 +73,35 @@ const Hero1 = ({
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               {buttons.primary && (
-                <Button asChild className="w-full sm:w-auto">
-                  <a href={buttons.primary.url}>{buttons.primary.text}</a>
+                   <Button asChild className="w-full sm:w-auto">
+                  <a 
+                    href={buttons.primary.url}
+                    onClick={(e) => {
+                      if (buttons.primary && buttons.primary.url.startsWith('#')) {
+                        e.preventDefault();
+                        document.querySelector(buttons.primary.url)?.scrollIntoView({
+                          behavior: 'smooth'
+                        });
+                      }
+                    }}
+                  >
+                    {buttons.primary.text}
+                  </a>
                 </Button>
               )}
               {buttons.secondary && (
-                <Button asChild variant="outline" className="w-full sm:w-auto">
-                  <a href={buttons.secondary.url}>
+                  <Button asChild variant="outline" className="w-full sm:w-auto">
+                  <a 
+                    href={buttons.secondary.url}
+                    onClick={(e) => {
+                      if (buttons.secondary && buttons.secondary.url.startsWith('#')) {
+                        e.preventDefault();
+                        document.querySelector(buttons.secondary.url)?.scrollIntoView({
+                          behavior: 'smooth'
+                        });
+                      }
+                    }}
+                  >
                     {buttons.secondary.text}
                     <ArrowRight className="size-4" />
                   </a>

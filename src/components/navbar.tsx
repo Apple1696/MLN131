@@ -77,10 +77,10 @@ const Navbar1 = ({
       url: "#",
     },
 
-    {
-      title: "Giới thiệu team",
-      url: "#",
-    },
+    // {
+    //   title: "Giới thiệu team",
+    //   url: "#",
+    // },
     
   ],
 }: Navbar1Props) => {
