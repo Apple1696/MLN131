@@ -49,7 +49,7 @@ const BourgeoisDemocracy = () => {
                 <div className="flex items-center justify-center">
                     <div className="rounded-lg w-full h-[400px] overflow-hidden">
                         <img
-                            src="/images/bourgeois.jpg"
+                            src="/images/bourgeois-democracy/bourgeois.jpg"
                             alt="Bourgeois Democracy"
                             className="w-full h-full object-cover"
                         />
@@ -60,7 +60,7 @@ const BourgeoisDemocracy = () => {
             <Separator className="my-10" />
 
             <div className="mt-10">
-                <h2 className="text-2xl font-semibold mb-6">Thông Tin Chi Tiết Về Dân Chủ Tư Sản</h2>
+                <h2 className="text-2xl font-semibold mb-6 text-primary">Thông Tin Chi Tiết Về Dân Chủ Tư Sản</h2>
 
                 <Tabs defaultValue="historical-context" className="w-full text-left">
                     <TabsList className="grid grid-cols-5 mb-8">
