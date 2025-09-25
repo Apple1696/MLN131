@@ -1,6 +1,4 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 interface Hero1Props {
@@ -24,7 +22,6 @@ interface Hero1Props {
 }
 
 const SecondSection = ({
-  badge = "✨ Your Website Builder",
   heading = "Blocks Built With Shadcn & Tailwind",
   description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
   buttons = {

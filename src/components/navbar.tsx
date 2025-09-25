@@ -1,4 +1,4 @@
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import {  Menu,  Trees, Zap } from "lucide-react";
 
 import {
   Accordion,
@@ -86,7 +86,7 @@ const Navbar1 = ({
 }: Navbar1Props) => {
   return (
     <>
-      <style jsx>{`
+      <style>{`
         .navbar-custom {
           background-color: #f87171!important;
         }

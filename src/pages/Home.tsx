@@ -6,6 +6,25 @@ export default function Home() {
   return (
     <>
       <Hero1
+        description="Presented by Group 7"
+        images={[
+          {
+            src: "/images/home/society.jpg",
+            alt: "Hero section demo image 1",
+          },
+          {
+            src: "/images/home/socialist democracy.jpg",
+            alt: "Hero section demo image 2",
+          },
+          {
+            src: "/images/home/scale2.jpg",
+            alt: "Hero section demo image 3",
+          },
+          {
+            src: "/images/home/bourgeois democracy.jpg",
+            alt: "Hero section demo image 4",
+          },
+        ]}
         heading='Sự khác nhau về bản chất giữa dân chủ xã hội chủ nghĩa và dân chủ tư sản'
       />
 

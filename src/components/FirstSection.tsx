@@ -1,6 +1,5 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 interface Hero1Props {
@@ -24,9 +23,8 @@ interface Hero1Props {
 }
 
 const Hero1 = ({
-  badge = "✨ Your Website Builder",
   heading = "Blocks Built With Shadcn & Tailwind",
-  description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
+  description = "Presented by Group 7",
   buttons = {
     primary: {
       text: "Khám quá ngay ",
@@ -70,9 +68,9 @@ const Hero1 = ({
             <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
               {heading}
             </h1>
-            {/* <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
+            <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
               {description}
-            </p> */}
+            </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               {buttons.primary && (
                 <Button asChild className="w-full sm:w-auto">
