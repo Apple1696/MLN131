@@ -6,8 +6,8 @@ const SociallistDemocracy = () => {
     return (
         <div className="container mx-auto py-20 px-4">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-primary md:text-4xl">Dân chủ xã hội chủ nghĩa</h1>
-                <p className="text-muted-foreground mt-2">
+                <h1 className="text-3xl text-center font-bold text-primary md:text-4xl">Dân chủ xã hội chủ nghĩa</h1>
+                <p className="text-muted-foreground text-center mt-2">
                     Tìm hiểu về hình thức dân chủ kiểu mới và vai trò của nó trong xây dựng xã hội công bằng, dân chủ, văn minh
                 </p>
             </div>

@@ -6,8 +6,8 @@ const BourgeoisDemocracy = () => {
     return (
         <div className="container mx-auto py-20 px-4">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-primary md:text-4xl">Dân chủ tư sản</h1>
-                <p className="text-muted-foreground mt-2">
+                <h1 className="text-3xl text-center font-bold text-primary md:text-4xl">Dân chủ tư sản</h1>
+                <p className="text-muted-foreground text-center mt-2">
                     Tìm hiểu về hình thức dân chủ đầu tiên trong lịch sử và những đặc điểm của nó trong xã hội tư bản chủ nghĩa
                 </p>
             </div>
