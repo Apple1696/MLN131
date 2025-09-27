@@ -52,7 +52,7 @@ const Navbar1 = ({
     { title: "Trang chủ", url: "/" },
     
     {
-      title: "Các loại dân chủ",
+      title: "Nội dung",
       url: "/",
       items: [
         {
@@ -71,6 +71,14 @@ const Navbar1 = ({
         },
         
       ],
+    },
+    {
+      title: "Mini Game",
+      url: "/mini-game",
+    },
+    {
+      title: "Quiz",
+      url: "/quiz",
     },
     {
       title: "AI Chatbot",
@@ -117,7 +125,7 @@ const Navbar1 = ({
           color: #f87171 !important;
         }
       `}</style>
-      <section className="py-4 navbar-custom">
+      <section className="py-4 navbar-custom" style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
         <div className="container mx-auto">
           {/* Desktop Menu */}
          <nav className="hidden lg:flex">
