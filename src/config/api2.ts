@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
 
 // Base API configuration
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://18.143.165.160:8080/mln';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://18.143.165.160:8080/mln';
 const API_TIMEOUT = 10000; // 10 seconds
 
 // Create axios instance
