@@ -5,6 +5,8 @@ import SocialistDemocracy from "./pages/socialist-democracy";
 import BourgeoisDemocracy from "./pages/bourgeois-democracy";
 import DemocracyGame from "./pages/mini-game";
 import DemocracyQuiz from "./pages/quiz";
+import AIChatbot from "./pages/AI-Chatbot";
+import AIChatbot2 from "./pages/AI-Chatbot2";
 
 
 export const router = createBrowserRouter([
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
      {
       path: "/quiz",
       element: <DemocracyQuiz />,
+     },
+     {
+      path: "/ai-chatbot",
+      element: <AIChatbot />,
+     },
+     {
+      path: "/ai-chatbot2",
+      element: <AIChatbot2 />,
      }
 
       
