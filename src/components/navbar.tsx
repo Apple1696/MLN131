@@ -82,7 +82,7 @@ const Navbar1 = ({
     },
     {
       title: "AI Chatbot",
-      url: "/ai-chatbot",
+      url: "/ai-chatbot2",
     },
 
     // {
