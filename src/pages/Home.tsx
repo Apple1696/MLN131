@@ -13,6 +13,20 @@ export default function Home() {
     viewport: { once: false, margin: "-100px" }
   };
 
+  const slideInLeft = {
+    initial: { opacity: 0, x: -100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: easeOut },
+    viewport: { once: false, margin: "-100px" }
+  };
+
+  const slideInRight = {
+    initial: { opacity: 0, x: 100 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: easeOut },
+    viewport: { once: false, margin: "-100px" }
+  };
+
   return (
     <>
       <Hero1
@@ -43,7 +57,7 @@ export default function Home() {
         <Team1 />
       </motion.div>
 
-      <motion.div {...fadeInUp} id ="socialist-democracy">
+      <motion.div {...slideInLeft} id ="socialist-democracy">
         <ThirdSection
           heading='Tìm hiểu dân chủ xã hội chủ nghĩa ở Việt Nam'
           image={{ src: "/images/home/socialist democracy.jpg", alt: "Hero section demo image showing interface components" }}
@@ -51,7 +65,7 @@ export default function Home() {
         />
       </motion.div>
 
-      <motion.div {...fadeInUp}>
+      <motion.div {...slideInRight}>
         <SecondSection
           heading='Tìm hiểu dân chủ tư sản ở các nước tư bản'
           image={{ src: "/images/home/bourgeois democracy.jpg", alt: "Hero section demo image showing interface components" }}

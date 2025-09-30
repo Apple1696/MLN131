@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 interface Hero1Props {
@@ -40,8 +39,10 @@ const ThirdSection = ({
   },
 }: Hero1Props) => {
   return (
-    <section className="py-32">
-      <div className="container mx-auto">
+    <section className="py-32"
+    //  style={{ backgroundColor: "#ffedd5" }}
+     >
+      <div className="container mx-auto"  >
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <img
             src={image.src}
