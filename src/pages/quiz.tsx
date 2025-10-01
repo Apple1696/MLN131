@@ -268,7 +268,7 @@ export default function DemocracyQuiz() {
   }
 
   // Results Screen
-  if (isQuizCompleted) {
+   if (isQuizCompleted) {
     return (
       <div className="max-w-2xl mx-auto p-6 space-y-6">
         <Card className="text-center">
@@ -299,6 +299,13 @@ export default function DemocracyQuiz() {
                   const userAnswer = answers[question.id];
                   const isCorrect = userAnswer === question.correctAnswer;
                   
+                  // Find the full text for user's answer and correct answer
+                  const userAnswerText = userAnswer 
+                    ? question.options.find(opt => opt.value === userAnswer)?.label || "Không tìm thấy"
+                    : "Không trả lời";
+                  
+                  const correctAnswerText = question.options.find(opt => opt.value === question.correctAnswer)?.label || "Không tìm thấy";
+                  
                   return (
                     <div key={question.id} className="text-left p-4 border rounded-lg">
                       <div className="flex items-center gap-2 mb-2">
@@ -314,10 +321,10 @@ export default function DemocracyQuiz() {
                       <p className="text-sm text-muted-foreground mb-2">
                         {question.question}
                       </p>
-                      <div className="text-sm">
-                        <p>Bạn chọn: <span className={isCorrect ? "text-green-600" : "text-red-600"}>{userAnswer || "Không trả lời"}</span></p>
+                      <div className="text-sm space-y-1">
+                        <p>Bạn chọn: <span className={isCorrect ? "text-green-600" : "text-red-600"}>{userAnswerText}</span></p>
                         {!isCorrect && (
-                          <p>Đáp án đúng: <span className="text-green-600">{question.correctAnswer}</span></p>
+                          <p>Đáp án đúng: <span className="text-green-600">{correctAnswerText}</span></p>
                         )}
                       </div>
                     </div>
