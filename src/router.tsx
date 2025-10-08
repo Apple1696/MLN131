@@ -7,7 +7,8 @@ import DemocracyGame from "./pages/mini-game";
 import DemocracyQuiz from "./pages/quiz";
 import AIChatbot from "./pages/AI-Chatbot";
 import AIChatbot2 from "./pages/AI-Chatbot2";
-
+import { Service1 } from "./pages/About";
+import ErrorPage from "./pages/error";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <Service1 />,
       },
      {
       path: "/socialist-democracy",
@@ -41,9 +46,11 @@ export const router = createBrowserRouter([
      {
       path: "/ai-chatbot2",
       element: <AIChatbot2 />,
+     },
+     {
+      path: "*",
+      element: <ErrorPage />,
      }
-
-      
     ],
     },
 ]);

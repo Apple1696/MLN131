@@ -50,6 +50,7 @@ const Navbar1 = ({
   },
   menu = [
     { title: "Trang chủ", url: "/" },
+    // { title: "Giới thiệu", url: "/about" },
     
     {
       title: "Nội dung",
